@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Handjet:wght@300&family=Inter:wght@700&family=Kanit:wght@700&family=League+Spartan&family=Oxygen:wght@400;700&family=Poppins:wght@400;500;700;800&display=swap");
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('assets/backgroundd.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+form {
+    background: #fff;
+    width: 540px;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.header {
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.url-input {
+    margin: 25px;
+}
+
+.title {
+    font-size: 18px;
+    color: #373737;
+}
+
+.field {
+    height: 50px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.field input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 15px;
+    padding: 0 15px;
+    font-size: 15px;
+    background: #f1f1f7;
+    font-family: 'Nono Sans', sans-serif;
+    border-bottom: 2px solid #ccc;
+    transition: all 0.3s ease-in-out;
+}
+
+.field input:active {
+    scale: 0.9;
+}
+
+.preview-area {
+    height: 220px;
+    border-radius: 5px;
+    border: 2px dashed #7D2AE8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.preview-area span {
+    color: #9855f0;
+}
+
+
+.paste-video {
+    margin-left: 5px;
+    font-size: 18px;
+    color: whitesmoke;
+}
+
+i {
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+i:active {
+    scale: 0.9;
+}
+
+.download-btn {
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    cursor: pointer;
+    border: none;
+    border-radius: 9px;
+    font-weight: 500;
+    background-image: url('./assets/backgroundd.jpg');
+    background-position: center;
+    background-size: cover;
+    transition: all 0.3s ease-in-out;
+}
+
+.download-btn:active {
+    scale: 0.9;
+    opacity: 0.9;
+}
+
+.icon {
+    font-size: 35px;
+    margin-bottom: 8px;
+    color: #7D2AE8;
+}
+
+.thumbnail {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    border-radius: 5px;
+    display: none;
+}
+
+.preview-area.active .thumbnail {
+    display: block;
+}
+
+
+/* Active Style */
+
+
+.active {
+    border: none;
+}
